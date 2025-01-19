@@ -12,8 +12,8 @@ A real-time Hacker News scraping service that collects stories from both the fro
 - 💾 MySQL storage
 
 ## Prerequisites
-- Node.js (v14 or higher)
-- MySQL (v8.0 or higher)
+- Node.js 
+- MySQL (v5.6 or higher) - Required for proper TIMESTAMP and UTF8 support
 - npm or yarn
 
 ## Installation
@@ -25,7 +25,11 @@ A real-time Hacker News scraping service that collects stories from both the fro
 
 2. Install dependencies:
    ```bash
+   # Using npm
    npm install
+   
+   # OR using yarn
+   yarn install
    ```
 
 3. Create a `.env` file with these variables:
@@ -43,18 +47,30 @@ A real-time Hacker News scraping service that collects stories from both the fro
 
 4. Initialize database:
    ```bash
+   # Using npm
    npm run init-db
+   
+   # OR using yarn
+   yarn init-db
    ```
 
 ## Usage
 1. Start server (development):
    ```bash
+   # Using npm
    npm run dev
+   
+   # OR using yarn
+   yarn dev
    ```
 
 2. Start server (production):
    ```bash
+   # Using npm
    npm start
+   
+   # OR using yarn
+   yarn start
    ```
 
 ## API Endpoints
